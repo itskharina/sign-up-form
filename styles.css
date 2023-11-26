@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: logoFont;
+    src: url(Norse-Bold.otf);
+  }
+
+.container {
+    display: flex;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    padding: 130px 0 50px 60px;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    background-color: rgb(243, 243, 243);
+}
+
+.top-text {
+    width: 57%;
+}
+
+.bottom-text {
+    margin-top: 20px;
+}
+
+img.leaves {
+    width: 750px;
+    height: auto;
+    position: relative;
+    height: 100vh;
+}
+
+.odin-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 750px;
+    height: 150px;
+    top: 16.5%;
+    color: white;
+    font-size: 6rem;
+    font-family: logoFont, sans-serif;
+}
+
+.logo {
+    max-width: 13%;
+    max-height: auto;
+}
+
+.formContainer {
+    font-family: sans-serif;
+}
+
+.inputs {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 8px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-box label {
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #E5E7EB;
+}
+
+h2 {
+    margin-left: 50px;
+}
+
+.first-row, .second-row, .third-row {
+    display: flex;
+    gap: 100px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.third-row {
+        padding-bottom: 50px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
