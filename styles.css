@@ -17,14 +17,14 @@ body {
 .text {
     display: flex;
     flex-direction: column;
-    padding: 130px 0 50px 60px;
+    padding: 60px 0 50px 60px;
     font-size: 1.5rem;
     font-weight: 600;
     background-color: rgb(243, 243, 243);
 }
 
 .top-text {
-    width: 57%;
+    width: 80%;
 }
 
 .bottom-text {
@@ -73,7 +73,13 @@ img.leaves {
     margin-bottom: 1px;
 }
 
-input {
+input:focus {
+    border: 1px solid blue;
+    outline: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.first, .error {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #E5E7EB;
@@ -83,7 +89,7 @@ h2 {
     margin-left: 50px;
 }
 
-.first-row, .second-row, .third-row {
+.first-row, .second-row {
     display: flex;
     gap: 100px;
     margin-left: 50px;
@@ -91,7 +97,10 @@ h2 {
 }
 
 .third-row {
-        padding-bottom: 50px;
+    padding-bottom: 30px;
+    display: flex;
+    gap: 100px;
+    margin-left: 50px;
 }
 
 input::-webkit-outer-spin-button,
@@ -103,11 +112,16 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
   -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type=email]:invalid {
+    border: 1px solid red;
 }
 
 button {
     margin-left: 50px;
-    margin-top: 50px;
+    margin-top: 30px;
     color: white;
     background-color: #596D48;
     border: none;
@@ -122,7 +136,7 @@ button {
 
 .log-in {
     margin-left: 50px;
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 1.2rem;
     font-weight: 600;
 }
@@ -130,4 +144,9 @@ button {
 a {
     color: #596D48;
     text-decoration: none;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
 }
