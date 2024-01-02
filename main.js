@@ -35,3 +35,4 @@ email.addEventListener("input", function (e) {
         emailError.textContent = '';
     }
 })
+
