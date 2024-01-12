@@ -134,10 +134,6 @@ input[type=number] {
   appearance: textfield;
 }
 
-input[type=email]:invalid {
-    border: 1px solid red;
-}
-
 button {
     margin-left: 50px;
     margin-top: 40px;
@@ -169,4 +165,3 @@ a {
     color: red;
     font-size: 0.9rem;
 }
-

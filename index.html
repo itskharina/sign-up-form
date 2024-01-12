@@ -25,7 +25,7 @@
                 <div class="top-text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <i>now</i> to get started.</div>
                 <div class="bottom-text">You <i>know</i> you want to.</div>
             </div>
-            <div class="formContainer">
+            <div class="form-container">
                 <form>
                     <h3>Let's do this!</h3>
 
@@ -45,30 +45,31 @@
                         <div class="second-row">
                             <div class="input-box">
                                 <label for="email">EMAIL</label>
-                                <input type="email" id="email" class="first" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                                <input type="email" id="email" class="first" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                                 <p class="error-message email-error"></p>
                             </div>
 
                             <div class="input-box">
                                 <label for="phone">PHONE NUMBER</label>
                                 <input type="number" id="phone" class="first" required>
+                                <p class="error-message phone-error"></p>
                             </div>
                         </div>
 
                         <div class="third-row">
                             <div class="input-box">
                                 <label for="password">PASSWORD</label>
-                                <input type="password" id="password" class="error" onchange="check(); required">
+                                <input type="password" id="password" class="error" required>
                             </div>
 
                             <div class="input-box">
                                 <label for="confirm-password">CONFIRM PASSWORD</label>
-                                <input type="password" id="confirm-password" class="error" onchange="check();" required>
+                                <input type="password" id="confirm-password" class="error" required>
                                 <p class="error-message password-error"></p>
                             </div>
                         </div>
                     </div>
-                    <button type="submit">Create Account</button>
+                    <button type="submit" class="submit">Create Account</button>
                 </form>
             </div>
             <p class="log-in">Already have an account? <a href="#">Log in</a>
